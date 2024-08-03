@@ -9,7 +9,7 @@ const {gif,fetchData,loading}=useGif();
     <div className="flex flex-col items-center mt-5 rounded-xl justify-center bg-green-600 w-6/12 mx-auto">
       <h2 className="text-xl underline my-3">Random GIF</h2>
       <div>
-      {loading?<Spinner/>:<img src={gif} />}
+      {loading?<Spinner/>:<img src={gif} alt="spinner" />}
       </div>
       <button className="bg-white p-2 px-4 rounded-md my-3 w-8/12"
       onClick={()=>fetchData()}>

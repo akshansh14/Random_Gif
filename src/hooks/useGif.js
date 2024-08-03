@@ -19,7 +19,7 @@ export default function useGif(tag) {
   }
   useEffect(() => {
     fetchData()
-  }, []);
+  }, [fetchData]);
 
 
  return{gif,fetchData,loading}

@@ -14,7 +14,7 @@ export default function Tag() {
     <div className="flex flex-col items-center mt-5 rounded-xl justify-center px-2 bg-blue-600 w-6/12 mx-auto">
       <h2 className="text-xl underline my-3">Random <span className="capitalize">{tag}</span> GIF</h2>
       <div>
-        {loading?<Spinner/>:<img src={gif} />}
+        {loading?<Spinner/>:<img src={gif} alt="spinner"/>}
       </div>
 
 
